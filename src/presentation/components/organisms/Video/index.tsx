@@ -7,14 +7,15 @@ const VideoSection: React.FC = () => {
 	return (
 		<section className={style.video} id="video">
 			<div className="container">
-				<video
-					controls
+				<iframe
 					className={style.videoPlayer}
-					preload="metadata"
-					poster="/bg/hero-banner.png"
-				>
-					<source src="/video/video.mp4" type="video/mp4" />
-				</video>
+					src="https://player.vimeo.com/video/1170745973?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+					frameBorder="0"
+					allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+					referrerPolicy="strict-origin-when-cross-origin"
+					title="video"
+				></iframe>
+				<script src="https://player.vimeo.com/api/player.js"></script>
 			</div>
 		</section>
 	);
