@@ -23,7 +23,10 @@ const navItems: IListData[] = [
 
 // -- data sosmed
 const sosmedList: IListData[] = [
-	{ title: "instagram", to: "https://www.instagram.com/balaikarkesbandung" },
+	{
+		title: "instagram",
+		to: "https://www.instagram.com/bkkbandungwilkercirebon?igsh=MnRyY2xoendva2Qz",
+	},
 	{
 		title: "whatsapp",
 		to: "https://api.whatsapp.com/send/?phone=6281299991023&text=Halo+BKK+Bandung&type=phone_number&app_absent=0",
@@ -39,8 +42,8 @@ const Footer: React.FC = () => {
 						<div className={style.item}>
 							<h6 className={style.title}>Alamat</h6>
 							<p className={style.text}>
-								<span>BKK Kelas I Bandung</span> Jl. Cikapayang No.5, Tamansari,
-								Kec. Bandung Wetan Kota Bandung, Jawa Barat 40116
+								<span>BKK Kelas I Bandung</span> Jl. Sekar Kemuning II,
+								Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat 45131
 							</p>
 						</div>
 						<div className={style.item}>
@@ -55,8 +58,8 @@ const Footer: React.FC = () => {
 						</div>
 						<div className={style.item}>
 							<h6 className={style.title}>Hubungi Kami</h6>
-							<a href="tel:0224219305" className={style.link}>
-								(022) 421-9305
+							<a href="tel:02318801023" className={style.link}>
+								(0231) 8801023
 							</a>
 							<a
 								href="mailto:balaikarkesbandung@kemkes.go.id"

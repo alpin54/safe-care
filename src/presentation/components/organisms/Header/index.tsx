@@ -36,7 +36,10 @@ const navItems: IListData[] = [
 
 // -- data sosmed
 const sosmedList: IListData[] = [
-	{ title: "instagram", to: "https://instagram.com" },
+	{
+		title: "instagram",
+		to: "https://www.instagram.com/bkkbandungwilkercirebon?igsh=MnRyY2xoendva2Qz",
+	},
 	{
 		title: "whatsapp",
 		to: "https://api.whatsapp.com/send/?phone=6281299991023&text=Halo+BKK+Bandung&type=phone_number&app_absent=0",
@@ -149,8 +152,8 @@ const Header: React.FC = () => {
 						<div className={style.footer}>
 							<div className={style.info}>
 								<p className={style.infoLabel}>Hubungi Kami</p>
-								<a href="tel:0224219305" className={style.infoLink}>
-									(022) 421-9305
+								<a href="tel:02318801023" className={style.infoLink}>
+									(0231) 8801023
 								</a>
 								<a
 									href="mailto:balaikarkesbandung@kemkes.go.id"
