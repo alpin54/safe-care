@@ -16,9 +16,19 @@ const NotFound: React.FC = () => {
 
 		const initLocomotiveScroll = async () => {
 			try {
-				const LocomotiveScroll = (await import("locomotive-scroll")).default;
+				const LocomotiveScrollModule = await import("locomotive-scroll");
+				const LocomotiveScroll = LocomotiveScrollModule.default as unknown as new (options: {
+					el: HTMLElement;
+					smooth: boolean;
+				}) => LocomotiveScrollInstance;
+				const scrollContainer = document.querySelector("[data-scroll-container]");
+
+				if (!(scrollContainer instanceof HTMLElement)) {
+					return;
+				}
+
 				locomotiveScroll = new LocomotiveScroll({
-					el: document.querySelector("[data-scroll-container]") as HTMLElement,
+					el: scrollContainer,
 					smooth: true,
 				});
 

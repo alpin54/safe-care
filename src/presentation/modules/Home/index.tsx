@@ -27,10 +27,16 @@ const Home: React.FC = () => {
 		const initLocomotiveScroll = async () => {
 			try {
 				const LocomotiveScroll = (await import("locomotive-scroll")).default;
-				locomotiveScroll = new LocomotiveScroll({
-					el: document.querySelector("[data-scroll-container]") as HTMLElement,
+
+				const scrollElement = document.querySelector(
+					"[data-scroll-container]",
+				) as HTMLElement;
+				const options = {
+					el: scrollElement,
 					smooth: true,
-				});
+				};
+
+				locomotiveScroll = new LocomotiveScroll(options as any);
 
 				setTimeout(() => {
 					setIsLoading(false);

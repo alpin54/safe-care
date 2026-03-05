@@ -16,9 +16,9 @@ import { IListData } from "../Header/type";
 
 // -- data navItems
 const navItems: IListData[] = [
-	{ title: "Senin - Jumat: 08:00 - 16:00" },
-	{ title: "Sabtu - Minggu: Tutup" },
-	{ title: "Hari Libur Nasional: Tutup" },
+	{ title: "Senin - Jumat: 08:00 - 16:00", to: "" },
+	{ title: "Sabtu - Minggu: Tutup", to: "" },
+	{ title: "Hari Libur Nasional: Tutup", to: "" },
 ];
 
 // -- data sosmed

@@ -30,6 +30,7 @@ import { IListData } from "../Header/type";
 const navItems: IListData[] = [
 	{ title: "Apa Itu TB", to: "#apa-itu-tb" },
 	{ title: "Kenali Gejala", to: "#kenali-gejala" },
+	{ title: "Video Edukasi", to: "#video" },
 	{ title: "Skrining TB", to: "#skrining" },
 ];
 
@@ -58,7 +59,9 @@ const Header: React.FC = () => {
 	}, []);
 
 	const handleScroll = () => {
-		const sections = navItems.map((item) => document.querySelector(item.to));
+		const sections = navItems
+			.filter((item) => item.to !== undefined)
+			.map((item) => document.querySelector(item.to));
 		const scrollPosition = window.scrollY + window.innerHeight / 2;
 
 		sections.forEach((section, index) => {
