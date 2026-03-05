@@ -1,0 +1,149 @@
+@import "src/core/styles/_assets.scss";
+
+.footer {
+	position: relative;
+	width: 100%;
+	z-index: zi(footer);
+	background-color: color(grey, 2);
+	padding: 64px 80px 32px 0;
+	overflow: hidden;
+	:global(.dark) & {
+		background-color: color(black, 2);
+	}
+	@include large {
+		padding: 56px 80px 28px 0;
+	}
+	@include medium {
+		padding: 48px 0 24px;
+	}
+	@include small {
+		padding: 32px 0 16px;
+	}
+}
+.grid {
+	display: flex;
+	gap: 80px;
+	@include large {
+		flex-wrap: wrap;
+		gap: unset;
+	}
+}
+.item {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	@include large {
+		flex: 0 0 auto;
+		width: 50%;
+		margin: 8px 0;
+	}
+	@include small {
+		width: 100%;
+		margin: 0 0 24px;
+	}
+	&:last-child {
+		margin-left: auto;
+		@include large {
+			margin-left: 0;
+		}
+		@include small {
+			margin-bottom: 0;
+		}
+	}
+	button {
+		background-color: color(primary) !important;
+	}
+}
+.text {
+	max-width: 360px;
+	display: block;
+	@include font-size(h6);
+	margin-bottom: 0;
+	span {
+		font-weight: fw(medium);
+		display: block;
+		margin-bottom: 8px;
+	}
+}
+.link {
+	display: inline-block;
+	text-decoration: none;
+	@include font-size(h6);
+	margin-bottom: 8px;
+	transition: color 0.3s ease;
+	&:hover {
+		color: color(primary);
+		border-color: color(primary);
+	}
+	&:last-child {
+		padding-bottom: 4px;
+		margin-bottom: 0;
+		transition: all 0.3s ease;
+		border-bottom: 1px solid color(black, 1);
+		:global(.dark) & {
+			border-color: color(white);
+		}
+		&:hover {
+			border-color: color(primary);
+		}
+	}
+}
+.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	&Item {
+		margin-bottom: 8px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&Text {
+		display: block;
+		@include font-size(h6);
+		margin-bottom: 8px;
+	}
+}
+.social {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: -8px;
+	margin-right: -8px;
+	&Link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		text-decoration: none;
+		@include font-size(h4);
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
+		&:hover {
+			color: color(white);
+		}
+	}
+	@include sosmed("instagram", "whatsapp");
+}
+.logo {
+	margin-top: 120px;
+	width: 100%;
+	&Img {
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: all 0.3s ease;
+	}
+}
+.copyright {
+	border-top: 1px solid color(grey, 3);
+	margin-top: 30px;
+	padding-top: 30px;
+	&Text {
+		@include font-size(small);
+		margin-bottom: 0;
+	}
+}

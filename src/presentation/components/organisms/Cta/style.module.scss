@@ -1,0 +1,136 @@
+@import "src/core/styles/_assets.scss";
+
+.cta {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 64px 0;
+	@include large {
+		padding: 56px 0;
+	}
+	@include medium {
+		padding: 48px 0;
+	}
+	@include small {
+		padding: 40px 0;
+	}
+	@include x-small {
+		padding: 32px 0;
+	}
+}
+.inner {
+	display: flex;
+	height: 100vh;
+	color: color(white);
+	@include radius(3);
+	overflow: hidden;
+	transform: translate(0);
+	@include large {
+		height: 80vh;
+	}
+	@include medium {
+		flex-direction: column-reverse;
+		height: auto;
+	}
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0 0 auto;
+	width: 50%;
+	padding: 64px;
+	background-color: color(black, 1);
+	:global(.dark) & {
+		background-color: color(black, 2);
+	}
+	@include large {
+		padding: 56px 32px;
+	}
+	@include medium {
+		padding: 48px 32px;
+		width: 100%;
+	}
+	@include small {
+		padding: 40px 24px;
+	}
+	@include x-small {
+		padding: 32px 24px;
+	}
+	@include retina {
+		padding: 24px 16px;
+	}
+}
+.img {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	@include medium {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+	}
+	@include small {
+		height: 320px;
+	}
+	@include x-small {
+		height: 280px;
+	}
+	&Wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	&El {
+		position: absolute;
+		top: -10%;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 120%;
+		object-fit: cover;
+		object-position: right;
+	}
+}
+.title {
+	@include font-size(h1);
+	margin-bottom: 24px;
+	span {
+		display: block;
+	}
+	@include large {
+		@include font-size(h2);
+	}
+	@include medium {
+		@include font-size(h2-a);
+	}
+	@include small {
+		@include font-size(h3);
+	}
+}
+.subtitle {
+	@include font-size(h3);
+	margin-bottom: 0;
+	@include medium {
+		@include font-size(h4);
+		margin-bottom: 80px;
+	}
+}
+.circleContainer {
+	background-color: red;
+	position: relative;
+	margin-top: 100px;
+	.circle {
+		height: 1550%;
+		width: 120%;
+		left: -10%;
+		border-radius: 0 0 50% 50%;
+		background-color: white;
+		z-index: 1;
+		position: absolute;
+		box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+	}
+}

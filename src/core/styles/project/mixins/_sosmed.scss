@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Mixin Sosmed
+   ========================================================================== */
+
+@mixin sosmed($instagram: "", $whatsapp: "") {
+	@if ($instagram == "instagram") {
+		:global(.instagram) {
+			&:hover {
+				background-color: color(social-media, instagram);
+			}
+		}
+	}
+	@if ($whatsapp == "whatsapp") {
+		:global(.whatsapp) {
+			&:hover {
+				background-color: color(social-media, whatsapp);
+			}
+		}
+	}
+}

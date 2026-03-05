@@ -1,0 +1,51 @@
+@import "src/core/styles/_assets.scss";
+
+.video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 64px 0;
+	background-color: color(white);
+	:global(.dark) & {
+		background-color: color(black, 2);
+	}
+	@include large {
+		padding: 56px 0;
+	}
+	@include medium {
+		padding: 48px 0;
+	}
+	@include small {
+		padding: 40px 0;
+	}
+	@include x-small {
+		padding: 32px 0;
+	}
+	&Player {
+		width: 100%;
+		border-radius: 16px;
+	}
+}
+.title {
+	max-width: 1200px;
+	@include font-size(h1);
+	margin-bottom: 64px;
+	@include large {
+		@include font-size(h2);
+	}
+	@include medium {
+		@include font-size(h2-a);
+		margin-bottom: 56px;
+	}
+	@include small {
+		margin-bottom: 48px;
+
+		@include font-size(h3);
+	}
+	@include x-small {
+		margin-bottom: 40px;
+	}
+	@include retina {
+		margin-bottom: 32px;
+	}
+}

@@ -1,0 +1,64 @@
+@import "src/core/styles/_assets.scss";
+
+.theme {
+	position: fixed;
+	bottom: 48px;
+	left: 48px;
+	z-index: zi(theme-mode);
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	@include font-size(h3);
+	font-weight: fw(medium);
+	color: color(sun);
+	background-color: color(white);
+	transform: rotate(0deg);
+	@include shadow(0);
+	@include remove-tap-highlight;
+	@include mq(1240px) {
+		left: 40px;
+		bottom: 40px;
+	}
+	@include x-large {
+		left: 32px;
+		bottom: 32px;
+	}
+	@include small {
+		left: 24px;
+		bottom: 24px;
+		width: 48px;
+		height: 48px;
+	}
+	@include retina {
+		left: 16px;
+		bottom: 16px;
+	}
+	:global(.dark) & {
+		@include shadow(1);
+		color: color(white);
+		background-color: color(black, 1);
+	}
+}
+.sun,
+.moon {
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	font-size: inherit;
+	line-height: 1 !important;
+	transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+	@include small {
+		top: 8px;
+		left: 8px;
+	}
+}
