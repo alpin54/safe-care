@@ -38,7 +38,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
 			<body>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="light"
 					enableSystem
 					disableTransitionOnChange
 				>
