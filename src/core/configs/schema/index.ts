@@ -1,14 +1,14 @@
-import { IDefaultSchemaType } from './type';
+import { IDefaultSchemaType } from "./type";
 
 // --- DefaultSchema
 const DefaultSchema: IDefaultSchemaType = {
 	organization: {
 		context: "http://schema.org",
-		id: "https://ethereal-landing-page.vercel.app#organization",
+		id: "https://skrining-digital-tb-hiv.vercel.app#organization",
 		type: "Organization",
-		name: "Ethereal",
-		url: "https://ethereal-landing-page.vercel.app",
-		logo: "https://ethereal-landing-page.vercel.app/logo/logo.png",
+		name: "Skrining Digital TB HIV",
+		url: "https://skrining-digital-tb-hiv.vercel.app",
+		logo: "https://skrining-digital-tb-hiv.vercel.app/logo/logo.png",
 		contactPoint: [
 			{
 				"@type": "ContactPoint",
@@ -18,24 +18,24 @@ const DefaultSchema: IDefaultSchemaType = {
 			},
 		],
 		sameAs: [
-			"https://www.instagram.com/ethereal",
-			"https://www.facebook.com/ethereal",
-			"https://www.tiktok.com/@ethereal",
+			"https://www.instagram.com/skrining-digital-tb-hiv",
+			"https://www.facebook.com/skrining-digital-tb-hiv",
+			"https://www.tiktok.com/@skrining-digital-tb-hiv",
 		],
 	},
 	website: {
 		context: "http://schema.org",
-		id: "https://ethereal-landing-page.vercel.app#website",
+		id: "https://skrining-digital-tb-hiv.vercel.app#website",
 		type: "WebSite",
-		url: "https://ethereal-landing-page.vercel.app",
-		name: "Ethereal",
+		url: "https://skrining-digital-tb-hiv.vercel.app",
+		name: "Skrining Digital TB HIV",
 	},
 	webpage: {
 		context: "http://schema.org",
-		id: "https://ethereal-landing-page.vercel.app#webpage",
+		id: "https://skrining-digital-tb-hiv.vercel.app#webpage",
 		type: "WebPage",
-		url: "https://ethereal-landing-page.vercel.app",
-		name: "Ethereal",
+		url: "https://skrining-digital-tb-hiv.vercel.app",
+		name: "Skrining Digital TB HIV",
 	},
 };
 

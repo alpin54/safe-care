@@ -2,13 +2,14 @@ import { IDefaultSEOType } from "./type";
 
 // --- DefaultSEO
 const DefaultSEO: IDefaultSEOType = {
-	title: "SAFE CARE - Skrining Dini Kesehatan Mental",
-	description: "SAFE CARE - Skrining Dini Kesehatan Mental",
-	keywords: "SAFE CARE, Skrining Dini, Kesehatan Mental",
+	title: "Skrining Digital TB HIV",
+	description: "Skrining Digital TB HIV",
+	keywords:
+		"Skrining Digital TB HIV, Skrining Dini, Kesehatan Mental, self-assessment, skrining online, skrining digital, skrining TB HIV, skrining dini TB HIV, skrining kesehatan mental, skrining kecemasan, skrining depresi, skrining stres",
 	timeRefresh: 900,
-	siteName: "SAFE CARE",
-	siteDomain: "https://safe-care.vercel.app",
-	siteURL: "https://safe-care.vercel.app",
+	siteName: "Skrining Digital TB HIV",
+	siteDomain: "https://skrining-digital-tb-hiv.vercel.app",
+	siteURL: "https://skrining-digital-tb-hiv.vercel.app",
 	themeColor: "#fac310",
 	author: "Alpin",
 	copyright: "© 2026 Raya Natasya. All rights reserved",
