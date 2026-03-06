@@ -42,8 +42,9 @@ const Footer: React.FC = () => {
 						<div className={style.item}>
 							<h6 className={style.title}>Alamat</h6>
 							<p className={style.text}>
-								<span>BKK Kelas I Bandung</span> Jl. Sekar Kemuning II,
-								Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat 45131
+								<span>BKK kelas I Bandung Wilayah Kerja Cirebon</span> Jl. Sekar
+								Kemuning II, Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat
+								45131
 							</p>
 						</div>
 						<div className={style.item}>
