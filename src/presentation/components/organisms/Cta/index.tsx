@@ -37,12 +37,17 @@ const Cta: React.FC = () => {
 			<div className="container">
 				<div className={style.inner}>
 					<div className={style.text}>
-						<p className={style.subtitle}>Kesehatan Anda Penting.</p>
+						<p className={style.subtitle}>Jangan Menunggu Gejala.</p>
 						<div className={style.headline}>
 							<h2 className={style.title}>
-								<span>Lakukan</span> Skrining TB.
+								<span>Lakukan</span> Skrining TB & HIV.
 							</h2>
-							<Button href="#skrining">Skrining TB Sekarang</Button>
+							<Button
+								href="https://forms.gle/SmeqFcvfepkJRTha7"
+								target="_blank"
+							>
+								Mulai Skrining Sekarang
+							</Button>
 						</div>
 					</div>
 					<div className={style.img}>
@@ -50,7 +55,7 @@ const Cta: React.FC = () => {
 							<motion.div style={{ y }} className={style.imgWrapper}>
 								<LazyLoadImage
 									src="/bg/skrining.png"
-									alt="hero-banner"
+									alt="skrining"
 									className={style.imgEl}
 									width={638}
 									height={1080}
@@ -60,7 +65,7 @@ const Cta: React.FC = () => {
 							<div className={style.imgWrapper}>
 								<LazyLoadImage
 									src="/bg/skrining.png"
-									alt="hero-banner"
+									alt="skrining"
 									className={style.imgEl}
 									width={638}
 									height={1080}

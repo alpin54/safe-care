@@ -15,38 +15,43 @@ import { IFeatureList } from "./type";
 // -- data
 const feature: IFeatureList[] = [
 	{
-		icon: "cough-men.svg",
-		title: "Kenali Gejala TB",
+		icon: "health-screening.svg",
+		title: "Skrining = Deteksi Dini",
 		description:
-			"Batuk lebih dari dua minggu, demam berkepanjangan, keringat malam, penurunan berat badan, dan mudah lelah dapat menjadi tanda Tuberkulosis. Jangan abaikan gejala yang berlangsung lama.",
+			"TB dan HIV sering tidak bergejala di awal. Skrining membantu mengetahui status lebih cepat agar pengobatan lebih efektif dan penularan bisa dicegah.",
 	},
 	{
 		icon: "airborne-droplets.svg",
-		title: "TB Menular Melalui Udara",
+		title: "TB Menular Lewat Udara",
 		description:
-			"Tuberkulosis menyebar melalui udara ketika seseorang yang terinfeksi batuk, berbicara, atau bersin. Tanpa pemeriksaan, risiko penularan kepada keluarga dan rekan kerja dapat meningkat.",
+			"Satu pasien TB aktif bisa menulari 10–15 orang per tahun. TB menyebar lewat percikan ludah (droplet) saat batuk, bersin, atau berbicara—bukan lewat jabat tangan atau alat makan.",
+	},
+	{
+		icon: "cough-men.svg",
+		title: "Kenali Gejala, Jangan Menunggu Parah",
+		description:
+			"Batuk lebih dari 2 minggu (bisa disertai darah), demam ringan sore hari, keringat malam, berat badan turun, dan lemas bisa menjadi tanda TB. TB laten bisa tanpa gejala—hanya skrining yang bisa mendeteksi.",
 	},
 	{
 		icon: "health-screening.svg",
-		title: "Skrining TB Cepat dan Mudah",
+		title: "Tes TB & HIV Tersedia (Gratis) di Puskesmas",
 		description:
-			"Pemeriksaan skrining TB tersedia di puskesmas dan fasilitas kesehatan. Prosesnya sederhana dan membantu mendeteksi TB lebih awal agar pengobatan dapat segera dilakukan.",
+			"Pemeriksaan TB (dahak dan rontgen dada) serta tes HIV tersedia di fasilitas kesehatan pemerintah. Hasil tes bersifat rahasia dan dilindungi undang-undang.",
 	},
 ];
+
 const FeatureSection: React.FC = () => {
 	return (
 		<section className={style.feature} id="kenali-gejala">
 			<div className="container">
 				<div className={style.head}>
 					<h2 className={style.title}>
-						Kenali Gejala TB dan Lakukan Skrining Lebih Awal
+						Skrining TB & HIV: Langkah Kecil, Dampak Besar
 					</h2>
 					<p className={style.desc}>
-						Tuberkulosis (TB) adalah penyakit menular yang masih banyak terjadi
-						pada orang dewasa yang aktif bekerja dan beraktivitas. Mengenali
-						gejala sejak dini dan melakukan skrining dapat membantu mendeteksi
-						TB lebih cepat sehingga pengobatan bisa segera dimulai dan penularan
-						dapat dicegah.
+						TB dan HIV dapat tidak bergejala pada fase awal. Dengan skrining,
+						Anda bisa mengetahui status lebih cepat, memulai pengobatan bila
+						diperlukan, dan membantu melindungi keluarga serta orang sekitar.
 					</p>
 				</div>
 				<div className={style.body}>

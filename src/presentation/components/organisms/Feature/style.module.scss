@@ -62,11 +62,15 @@
 }
 .body {
 	display: flex;
+	flex-wrap: nowrap;
 	gap: 40px;
+	margin-left: -48px;
+	margin-right: -48px;
+	padding-left: 48px;
+	padding-right: 48px;
+	@include scroll("x", "touch", "hide");
 	@include large {
 		gap: 32px;
-		flex-wrap: nowrap;
-		@include scroll("x", "touch", "hide");
 		margin-left: -32px;
 		margin-right: -32px;
 		padding-left: 32px;
@@ -89,8 +93,8 @@
 }
 .item {
 	width: 33.3333%;
+	flex: 0 0 auto;
 	@include large {
-		flex: 0 0 auto;
 		width: 400px;
 	}
 	@include small {

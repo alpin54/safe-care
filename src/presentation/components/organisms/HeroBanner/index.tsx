@@ -21,10 +21,10 @@ import Button from "@atoms/Button";
 
 // -- data
 const textItems: string[] = [
-	"Kenali Gejala TB Sejak Dini",
-	"Batuk Lebih dari 2 Minggu Bisa Jadi Tanda TB",
-	"Skrining TB Cepat dan Mudah di Puskesmas",
-	"Lindungi Diri dan Keluarga dari TB",
+	"TB & HIV sering tanpa gejala di awal — skrining adalah kuncinya",
+	"Deteksi dini = pengobatan lebih efektif & penularan bisa dicegah",
+	"Tes TB & HIV gratis di Puskesmas (hasil rahasia & dilindungi hukum)",
+	"Satu pasien TB aktif bisa menulari 10–15 orang per tahun",
 ];
 
 const HeroBanner: React.FC = () => {
@@ -90,7 +90,7 @@ const HeroBanner: React.FC = () => {
 					</div>
 				)}
 				<div className={style.content}>
-					<h1 className={style.title}>TB Bisa Menyerang Siapa Saja.</h1>
+					<h1 className={style.title}>Sadar TB & HIV Mulai dari Skrining.</h1>
 					<h2
 						className={style.tagline}
 						style={{ paddingBottom: `${paddingBottom}px` }}
@@ -112,7 +112,7 @@ const HeroBanner: React.FC = () => {
 							</motion.span>
 						</AnimatePresence>
 					</h2>
-					<Button href="#skrining">Skrining TB Sekarang </Button>
+					<Button href="#skrining">Mulai Skrining Sekarang</Button>
 				</div>
 			</div>
 		</section>
